@@ -15,3 +15,11 @@ const y = 10;
 
 console.log(x > 3 || y < 5); // true
 console.log(x < 3 || y < 5); // false
+
+
+//The ! operator returns the opposite of the operand's truthiness. If the operand is truthy, ! returns false. If the operand is falsy, ! returns true. Here's an example:
+
+const z = 10;
+
+console.log(!(z > 5)); // false
+console.log(!(z < 5)); // true
