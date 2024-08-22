@@ -1,3 +1,5 @@
+//The statement written in the first line will be executed before the second line, then continue down to the last line:
+
 console.log("Hello World!");
 console.log("I'm learning JavaScript");
 
