@@ -11,4 +11,4 @@ console.log(bioData["name"]); // Output: rajun
 console.log(bioData.age); // Output: 29
 console.log(bioData["pet"]); // Output: undefined
 
-//Note: see how ["pet"] says undefined, this is because the key "pet" doesn't exist in the object bioData.
+//Note: see how ["pet"] says undefined, this is because the key "pet" doesn't exist in the object bioData. 
