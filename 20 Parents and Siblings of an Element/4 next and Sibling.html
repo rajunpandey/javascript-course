@@ -1,0 +1,32 @@
+<!-- Consider the following HTML code. -->
+
+
+<html>
+<head>
+    <title>My Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="first">first</div>
+        <div class="second">second</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!--
+In the above code, the <div> element with class first is the previous sibling of the <div> element with class second.
+We can access the previous sibling of an element using the .previousElementSibling property. 
+ Similarly, we can access the next sibling of an element using the .nextElementSibling property.
+
+-->
+
+
+
+     <!-- Consider the following JavaScript code.-->
+
+
+console.log(document.body.firstElementChild.nextElementSibling); // <div class="second">second</div>
