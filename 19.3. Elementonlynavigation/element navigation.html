@@ -1,0 +1,80 @@
+<!--
+while accessing child nodes, we often get non-element nodes such as comments or text nodes. 
+To overcome this problem, we need to access only element nodes. 
+This can be done by using the following methods:
+
+
+firstElementChild - Returns the first child element of the specified element.
+lastElementChild - Returns the last child element of the specified element.
+previousElementSibling - Returns the previous sibling element of the specified element.
+nextElementSibling - Returns the next sibling element of the specified element.
+-->
+
+<!-- Lets see this in action, we will use the following HTML code: -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>elementonlynavigation</title>
+    <style>
+        html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+ul{
+    text-align: center;;
+    background-color: #333;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 29;
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+    </style>
+</head>
+<body>
+   <nav>
+    <ul>
+        <li>Home</li>
+        <li>About me</li>
+        <li>contact</li>
+    </ul>
+   </nav>
+
+   <div class="container">
+    <p>Hey, this is a simple test website</p>
+   </div>
+</body>
+</html>
+
+
+<!--
+we can use element-only navigation to access the first child node of the body and its first element child node:
+
+// Accessing the first child node of the body
+let firstChild = document.body.firstChild;
+console.log(firstChild); // #text
+
+// Accessing the first element child node of the body
+let firstElementChild = document.body.firstElementChild;
+console.log(firstElementChild); // <nav>
+As you can see, the first child node of the body is a text node, while the first element child node is the nav element. Similarly, we can use the lastElementChild property to access the last element child node of the body:
+
+// Accessing the last element child node of the body
+let lastElementChild = document.body.lastElementChild;
+console.log(lastElementChild); // <script>
+Now, let's see how we can use this to change the style of our page. For example, to change the background color of the nav bar to red, we can define the following function:
+
+const changeBgRed= () => {
+    document.body.firstElementChild.style.background = "red";
+}
+    -->

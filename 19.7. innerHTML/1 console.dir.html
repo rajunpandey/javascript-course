@@ -1,0 +1,31 @@
+<!--
+console.dir() is a method that is used to display an interactive list of the properties of a specified JavaScript object.
+ When we use console.dir() on a DOM element, it shows us all the properties and methods available for that element.
+-->
+<!--Consider the following HTML code:-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 41</title>
+</head>
+<body>
+	Hello World
+    <span>Hey I am span</span>
+</body>
+</html>
+
+
+<!--If we log the span element using console.log(), like this: -->
+
+console.log(document.getElementsByTagName('span')[0]);
+
+<!--We get the following output:-->
+
+<span>Hey I am span</span>
+
+
+<!--However, if we use console.dir() instead of console.log(), like this:-->
+
+console.dir(document.getElementsByTagName('span')[0]);
+
