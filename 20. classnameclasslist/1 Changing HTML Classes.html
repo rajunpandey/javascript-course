@@ -1,0 +1,47 @@
+<!--
+In HTML, we can use classes to group elements and apply the same styles to them using CSS. 
+In JavaScript, we can manipulate classes to change the appearance or behavior of elements dynamically.
+-->
+<!--<Consider the following HTML:-->
+
+<html>
+<head>
+    <title>Lesson 45</title>
+</head>
+<body>
+    <div id="first">
+        <span>Hello, this is a test text</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+ <!-- and also add the following CSS:-->
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.yellow {
+    background-color: yellow;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.text-dark {
+    color: black;
+}
+ <!--If we reload the web page we will see that no changes will be made because the CSS isn't added yet.
+  But if we make changes in HTML to also include a CSS class we made, for example:
+-->
+<div id="first" class="red"> 
+
+
+<!--We will see the changes getting reflected. We can also add to see multiple classes:-->
+
+<div id="first" class="yellow text-dark">
